@@ -6,7 +6,7 @@ on:
     - cron: '0 11 * * *'
 
 env:
-  GIT_USER: Kal-tist # change to yourself
+  GIT_USER: KaI-tist # change to yourself
   GIT_EMAIL: sparkhhhhhhhhhh@outlook.com # change to yourself
   THEME_REPO: lfkdsk/hexo-theme-type
   THEME_BRANCH: main
