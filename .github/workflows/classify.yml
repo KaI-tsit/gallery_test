@@ -7,7 +7,7 @@ on:
 
 env:
   GIT_USER: KaI-tist # change to yourself
-  GIT_EMAIL: sparkhhhhhhhhhh@outlook.com # change to yourself
+  GIT_EMAIL: 2381378538qlj@gmail.com # change to yourself
   THEME_REPO: lfkdsk/hexo-theme-type
   THEME_BRANCH: main
   TEMPLATE_REPO: lfkdsk/album_template
