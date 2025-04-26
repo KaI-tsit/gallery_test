@@ -19,7 +19,7 @@
   <meta name="google-site-verification" content="J4gssmXGNI9-DfJ9w52mL5KFPlRCYvySveEN0RJFZHU" />
   <!--Author-->
   
-  <meta name="author" content="Kal-tist">
+  <meta name="author" content="KaI-tist">
   
   <!--Open Graph Title-->
   <meta property="og:title" content="Photo" />
@@ -234,7 +234,7 @@
     
   </a>
   
-  <a class="itp-float-bar-item rounded" href="https://Kal-tist.github.io" title="归档">
+  <a class="itp-float-bar-item rounded" href="https://KaI-tist.github.io" title="归档">
     
     <iconpark-icon class="navicon" name="inbox"></iconpark-icon>
     
@@ -773,7 +773,7 @@
             var normalData = $("#no-exif-data");
             const name = getParam('name');
             const start = performance.now();
-            var imgLink = 'https://cdn.jsdelivr.net/gh/Kal-tist/gallery@master' + '/' + name;
+            var imgLink = 'https://cdn.jsdelivr.net/gh/KaI-tist/gallery@master' + '/' + name;
             // hide useless button
             $("#tools-wrapper").show();
             $("#copybox").hide();
@@ -830,7 +830,7 @@ WHERE photo.path ='` + name + "'"
                 const v = JSON.parse(result[0].values[0]);
                 console.log(v)
                 imageBox.src = imgLink; //替换图片
-                addBackUp(imageBox, "https://raw.githubusercontent.com/Kal-tist/gallery/master/", name);
+                addBackUp(imageBox, "https://raw.githubusercontent.com/KaI-tist/gallery/master/", name);
                 var imageFancy = imageBox.parentElement;
                 imageFancy.setAttribute("href", imgLink);
                 var fancyBoxImage = document.getElementsByClassName("fancybox__image")[0];
@@ -841,13 +841,13 @@ WHERE photo.path ='` + name + "'"
                 if (v.exif === "" || v.exif_data.length === 0) {
                     wrapper.hide();
                     normalWrapper.show();
-                    normalData.text("Shot By " + "Kal-tist");
+                    normalData.text("Shot By " + "KaI-tist");
                     return;
                 } else {
                     wrapper.show();
                     normalWrapper.hide();
                 }
-                wrapperData(v, "Kal-tist");
+                wrapperData(v, "KaI-tist");
             }
             searchPhoto();
             const duration = performance.now() - start;
@@ -868,7 +868,7 @@ WHERE photo.path ='` + name + "'"
   </section>
   
     <section class="footer-logo">
-      <a href="https://Kal-tist.github.io/" target="_blank">
+      <a href="" target="_blank">
         <img width="80px" height="80px" style="padding-top: 12px; display: block; margin: 0 auto;" src="https://github.com/lfkdsk/picx-images-hosting/raw/master/20230817/tripper2white.2pbuwaqvndu0.webp" alt="footer logo"></a>
     </section>
   

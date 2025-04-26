@@ -19,7 +19,7 @@
   <meta name="google-site-verification" content="J4gssmXGNI9-DfJ9w52mL5KFPlRCYvySveEN0RJFZHU" />
   <!--Author-->
   
-  <meta name="author" content="Kal-tist">
+  <meta name="author" content="KaI-tist">
   
   <!--Open Graph Title-->
   <meta property="og:title" content="随机照片" />
@@ -234,7 +234,7 @@
     
   </a>
   
-  <a class="itp-float-bar-item rounded" href="https://Kal-tist.github.io" title="归档">
+  <a class="itp-float-bar-item rounded" href="https://KaI-tist.github.io" title="归档">
     
     <iconpark-icon class="navicon" name="inbox"></iconpark-icon>
     
@@ -814,10 +814,10 @@ ORDER BY random() LIMIT 1;`
                 }
                 const v = JSON.parse(result[0].values[0]);
                 value = v;
-                var imgLink = 'https://cdn.jsdelivr.net/gh/Kal-tist/gallery@master' + '/' + v.path;
+                var imgLink = 'https://cdn.jsdelivr.net/gh/KaI-tist/gallery@master' + '/' + v.path;
                 imageBox.src = '';
                 imageBox.src = imgLink;
-                addBackUp(imageBox,"https://raw.githubusercontent.com/Kal-tist/gallery/master/", v.path);
+                addBackUp(imageBox,"https://raw.githubusercontent.com/KaI-tist/gallery/master/", v.path);
                 var imageFancy = imageBox.parentElement;
                 imageFancy.setAttribute("href", imgLink);
                 var fancyBoxImage = document.getElementsByClassName("fancybox__image")[0];
@@ -829,13 +829,13 @@ ORDER BY random() LIMIT 1;`
                 if (v.exif === "" || v.exif_data.length === 0) {
                     wrapper.hide();
                     normalWrapper.show();
-                    normalData.text("Shot By " + "Kal-tist");
+                    normalData.text("Shot By " + "KaI-tist");
                     return;
                 } else {
                     wrapper.show();
                     normalWrapper.hide();
                 }
-                wrapperData(v, "Kal-tist");
+                wrapperData(v, "KaI-tist");
             }
             function copyLink() {
                 if (value !== null) {
@@ -882,7 +882,7 @@ ORDER BY random() LIMIT 1;`
   </section>
   
     <section class="footer-logo">
-      <a href="https://Kal-tist.github.io/" target="_blank">
+      <a href="" target="_blank">
         <img width="80px" height="80px" style="padding-top: 12px; display: block; margin: 0 auto;" src="https://github.com/lfkdsk/picx-images-hosting/raw/master/20230817/tripper2white.2pbuwaqvndu0.webp" alt="footer logo"></a>
     </section>
   
