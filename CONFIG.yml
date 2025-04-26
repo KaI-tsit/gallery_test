@@ -2,22 +2,21 @@ title: 照片墙
 subtitle: Slow down
 description: 生活的每一刻都值得珍惜
 cover: 'https://github.com/lfkdsk/picx-images-hosting/raw/master/20230817/IMG_7586.4e91my1ve140.17iz0sa56gik.webp'
-author: Kal-tist
+author: KaI-tist
 
 footer_logo: 
   use: self
   self:
-    link: 'https://Kal-tist.github.io/'
     src: 'https://github.com/lfkdsk/picx-images-hosting/raw/master/20230817/tripper2white.2pbuwaqvndu0.webp'
 
-url: https://Kal-tist.github.io/gallery
+url: https://KaI-tist.github.io/gallery
 root: /gallery
 
 photography_page:
   slogan: true
   slogan_descr: 'QQ Gallery'
   travel_slogan: true
-  travel_slogan_descr: 'Kal-tist'
+  travel_slogan_descr: 'KaI-tist'
 
 google_analytics: 
   use: gtag
@@ -34,7 +33,7 @@ nav:
     link: /gallery/location
     icon: local-two
   归档: 
-    link: https://Kal-tist.github.io
+    link: https://KaI-tist.github.io
     icon: inbox
   随机:
     link: /gallery/random
@@ -49,7 +48,7 @@ nav:
     link: /gallery/grid-all
     icon: grid-nine
 
-thumbnail_url: https://cdn.jsdelivr.net/gh/Kal-tist/gallery@thumbnail/
-base_url: https://cdn.jsdelivr.net/gh/Kal-tist/gallery@master
-backup_base_url: https://raw.githubusercontent.com/Kal-tist/gallery/master
-backup_thumbnail_url: https://raw.githubusercontent.com/Kal-tist/gallery/thumbnail/
+thumbnail_url: https://cdn.jsdelivr.net/gh/KaI-tist/gallery@thumbnail/
+base_url: https://cdn.jsdelivr.net/gh/KaI-tist/gallery@master
+backup_base_url: https://raw.githubusercontent.com/KaI-tist/gallery/master
+backup_thumbnail_url: https://raw.githubusercontent.com/KaI-tist/gallery/thumbnail/
