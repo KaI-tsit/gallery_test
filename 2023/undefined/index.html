@@ -23,7 +23,7 @@
   <meta name="author" content="KaI-tist">
   
   <!--Open Graph Title-->
-  <meta property="og:title" content="Map-照片集" />
+  <meta property="og:title" content="照片集" />
   <!--Open Graph Description-->
   <meta property="og:description" content="生活的每一刻都值得珍惜" />
   <!--Open Graph Site Name-->
@@ -39,7 +39,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Title -->
   
-  <title>Map-照片集 - 照片墙</title>
+  <title>照片集 - 照片墙</title>
   <!-- 添加到主屏后的标题（iOS 6 新增） -->
   <meta name="apple-mobile-web-app-title" content="照片墙">
   <!-- 是否启用 WebApp 全屏模式 -->
@@ -140,13 +140,6 @@
   
   
   
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-  
   
   
   
@@ -195,6 +188,21 @@
   -->
   
   
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "照片集",
+      "image": "https://imgur.lzmun.com/picgo/after2022/6DD1FBC3-AD8A-4340-842D-6ACF531F8291_1_105_c.jpeg_itp",
+      "datePublished": "Fri Aug 18 2023 11:36:16 GMT+0000",
+      "author": [{
+        "@type": "Person",
+        "name": "KaI-tist",
+        "url": "https://KaI-tist.github.io/gallery"
+      }]
+    }
+  </script>
   
   
   
@@ -417,64 +425,29 @@
   <section class="pjax-area">
   <div class="content-area album-area">
     
-      <div id="slogan" class="container gpro-slogan title">
-        
-          KaI-tist
-            
-      </div>
+    <div class="container gpro-slogan title">
+      The moments when I pressed the shutter, the moments are forever.
+    </div>
+    
+    <div class="container gpro-container grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       
+      
+      <a href="Init">
+        <div class="gpro-tile lazy" data-src="Init/tzxl.webp">
+          <div class="gpro-tile-descr">Init</div>
+        </div>
+      </a>
+      
+    </div>
   </div>
-  <div class="container map-container">
-    <div id="map"></div>
-  </div>
-
   <script>
-    $(function () {
+    $(function() {
       $("div.lazy").lazyload();
     });
   </script>
   <style>
     body {
       background-color: #fff;
-    }
-
-    #map {
-      height: 70vh;
-      width: 70vw;
-      min-width: 600px;
-      margin: 0 auto;
-    }
-
-    .gmarker {
-      max-width: 300px;
-    }
-
-    .leaflet-popup-content {
-      min-width: 300px;
-    }
-
-    @media (max-width: 768px) {
-      .gmarker {
-        max-width: 100px;
-      }
-
-      .leaflet-popup-content {
-        min-width: 100px;
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-
-      .leaflet-layer,
-      .leaflet-control-zoom-in,
-      .leaflet-control-zoom-out,
-      .leaflet-control-attribution {
-        filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
-      }
-    }
-
-    .map-container {
-      margin-top: 120px;
     }
 
     .album-area {
@@ -495,19 +468,21 @@
 
     .gpro-container {
       margin-top: 120px;
-      gap: 12px;
+      gap: 8px;
     }
 
     .gpro-tile {
       aspect-ratio: 3 / 2;
       background-position: center;
       background-size: cover;
+      border-radius: 5px;
       transition: all .15s ease-in-out;
       min-height: 211px;
     }
 
     .gpro-tile:hover {
       box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+      transform: scale(1.02);
       transition: all .15s ease-in-out;
     }
 
@@ -517,30 +492,25 @@
       left: 0;
       width: 100%;
       height: 100%;
+      background: linear-gradient(#00000000 50%, #00000055 100%);
       color: #fff;
       font-size: 14px;
+      border-radius: 5px;
+      opacity: 0;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      align-items: center;
       text-overflow: clip;
-      flex-direction: column;
       transition: all .15s ease-in-out;
       padding-bottom: .85em;
-      opacity: 0;
-      background-color: rgb(9, 9, 11);
     }
 
     .gpro-tile-descr:hover {
-      opacity: 0.8;
+      opacity: 1;
       transition: all .15s ease-in-out;
     }
 
     @media (max-width: 768px) {
-      .gpro-tile-descr {
-        opacity: 0.6;
-      }
-
       .gpro-slogan {
         font-size: 28px;
       }
@@ -554,84 +524,6 @@
       }
     }
   </style>
-  <script type="text/javascript">
-    function getParam(key) {
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const id = urlParams.get(key);
-      return id;
-    }
-    var album = getParam('album');
-    var album_data = JSON.parse(`{"Init":{"url":"Init","date":"2025-04-26T00:00:00.000Z","style":"fullscreen","cover":"Init/tzxl.webp","location":[23.05,113.41]}}`);
-    var single_data = JSON.parse(`{}`);
-
-    var slogan = $("#slogan")[0];
-    var map = L.map('map');
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a target="_blank" rel="noopener" href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    var first = null;
-    var firstMark = null;
-    var keys = Object.keys(single_data)
-    // photos data.
-    for (const key of keys) {
-      var v = single_data[key];
-      var file = v.path;
-      if (album !== "" && album !== null) {
-        if (album != v.dir) {
-          continue
-        }
-      }
-      var cover = 'https://cdn.jsdelivr.net/gh/KaI-tist/gallery@thumbnail/' + file.substr(0, file.lastIndexOf(".")) + ".webp"
-      if (v.hasOwnProperty('location') && v.location.length !== 0) {
-        // add marker
-        var marker = L.marker(v.location).addTo(map);
-        marker.bindPopup(`<a href="https://kai-tist.github.io/gallery/${v.dir}?name=${v.name}">LINK</a>` + `<img class="gmarker nofancy" src=${cover} style="margin-top:4px;" />`);
-      }
-    }
-    // album data
-    keys = Object.keys(album_data)
-    for (const key of keys) {
-      var v = album_data[key];
-      // jump for non-album key.
-      if (album !== "" && album !== null) {
-        if (album != v.url) {
-          continue
-        }
-        slogan.textContent = key;
-      }
-      var file = v.cover;
-      var cover = 'https://cdn.jsdelivr.net/gh/KaI-tist/gallery@thumbnail/' + file.substr(0, file.lastIndexOf(".")) + ".webp"
-      if (v.hasOwnProperty('location') && v.location.length !== 0) {
-        // set center view.
-        if (first === null) {
-          first = v.location;
-        }
-        var icon = new L.Icon({
-          iconUrl: 'https://raw.githubusercontent.com/lfkdsk/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-          iconSize: [25, 41],
-          iconAnchor: [12, 41],
-          popupAnchor: [1, -34],
-          shadowSize: [41, 41]
-        });
-        // add marker
-        var marker = L.marker(v.location, {icon: icon}).addTo(map);
-        marker.bindPopup(`<a href="https://kai-tist.github.io/gallery/${v.url}">${key}</a>` + `<img class="gmarker nofancy" src=${cover} style="margin-top:4px;" />`);
-        if (firstMark === null) {
-          firstMark = marker;
-        }
-      }
-    }
-    if (first === null) {
-      first = [35.026051014758096, 135.76269658252528]
-    }
-    map.setView(first, 12);
-    if (firstMark !== null) {
-      firstMark.openPopup();
-    }
-  </script>
 </section>
   <!-- Footer -->
   <!-- Footer -->
